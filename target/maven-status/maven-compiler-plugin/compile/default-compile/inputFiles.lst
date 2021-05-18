@@ -1,5 +1,8 @@
-/home/oogasawa/works/Imputation/src/main/java/com/example/hello/HelloController.java
-/home/oogasawa/works/Imputation/src/main/java/com/example/SpringBootSampleApplication.java
-/home/oogasawa/works/Imputation/src/main/java/com/example/hello/Employee.java
-/home/oogasawa/works/Imputation/src/main/java/com/example/hello/HelloService.java
-/home/oogasawa/works/Imputation/src/main/java/com/example/hello/HelloRepository.java
+/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/webui/imputation/hello/Employee.java
+/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/webui/imputation/controller/KirImputationController.java
+/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/webui/imputation/hello/HelloService.java
+/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/webui/imputation/controller/SnpImputationController.java
+/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/webui/imputation/controller/HlaImputationController.java
+/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/webui/imputation/SpringBootSampleApplication.java
+/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/webui/imputation/hello/HelloController.java
+/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/webui/imputation/hello/HelloRepository.java
