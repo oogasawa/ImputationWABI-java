@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>jp.ac.nig.ddbj</groupId>
-	<artifactId>WabiImputation</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
-	<name>WabiImputation</name>
-	<description>An Imputation Server on WABI (Web API for Bioinformatics)</description>
+	<artifactId>ImputationWABI</artifactId>
+	<version>0.2.0</version>
+	<name>ImputationWABI</name>
+	<description>An Imputation Web API (Web API for Bioinformatics: WABI)</description>
 
 	<properties>
 		<java.version>1.9</java.version>
