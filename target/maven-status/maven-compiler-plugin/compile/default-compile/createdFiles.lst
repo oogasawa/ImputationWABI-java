@@ -1,8 +1,5 @@
-jp/ac/nig/ddbj/webui/imputation/SpringBootSampleApplication.class
-jp/ac/nig/ddbj/webui/imputation/hello/HelloService.class
-jp/ac/nig/ddbj/webui/imputation/controller/SnpImputationController.class
-jp/ac/nig/ddbj/webui/imputation/hello/Employee.class
-jp/ac/nig/ddbj/webui/imputation/hello/HelloController.class
-jp/ac/nig/ddbj/webui/imputation/controller/KirImputationController.class
-jp/ac/nig/ddbj/webui/imputation/hello/HelloRepository.class
-jp/ac/nig/ddbj/webui/imputation/controller/HlaImputationController.class
+jp/ac/nig/ddbj/wabi/imputation/json/JobInfo.class
+jp/ac/nig/ddbj/wabi/imputation/WabiImputationApplication.class
+jp/ac/nig/ddbj/wabi/imputation/form/SnpImputationForm.class
+jp/ac/nig/ddbj/wabi/imputation/util/IdGenerator.class
+jp/ac/nig/ddbj/wabi/imputation/controller/SnpImputationController.class
