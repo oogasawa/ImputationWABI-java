@@ -1,5 +1,5 @@
-/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/WabiImputationApplication.java
-/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/controller/SnpImputationController.java
-/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/util/IdGenerator.java
-/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/form/SnpImputationForm.java
-/home/oogasawa/works/WabiImputation-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/json/JobInfo.java
+/home/oogasawa/works/ImputationWABI-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/WabiImputationApplication.java
+/home/oogasawa/works/ImputationWABI-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/json/JobInfo.java
+/home/oogasawa/works/ImputationWABI-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/controller/SnpImputationController.java
+/home/oogasawa/works/ImputationWABI-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/util/IdGenerator.java
+/home/oogasawa/works/ImputationWABI-java/src/main/java/jp/ac/nig/ddbj/wabi/imputation/form/SnpImputationForm.java

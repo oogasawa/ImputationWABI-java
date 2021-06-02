@@ -6,16 +6,24 @@ import jp.ac.nig.ddbj.wabi.imputation.util.IdGenerator;
 import jp.ac.nig.ddbj.wabi.imputation.json.JobInfo;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 @CrossOrigin
 @RestController
@@ -122,7 +130,6 @@ public class SnpImputationController {
             jobId = form.getJobId();
         }
 
-
         return result;
     }
 
@@ -130,19 +137,30 @@ public class SnpImputationController {
 
 
     @PostMapping("/wabi/SNP_imputation/{jobId}/file_upload")
-    public JobInfo uploadFile(@PathVariable String jobId) {
+    public JobInfo uploadFile(@PathVariable String jobId, @RequestParam("file") MultipartFile file) {
         JobInfo result = new JobInfo();
         result.setJobId(jobId);
         if (this.existsJobId(jobId)) {
-            this.deleteJobDir(jobId);
-            result.setState("deleted");
+
+
+            // normalize the file path
+            String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+
+            try {
+                Path path = Paths.get(this.createDirName(jobId) + "/" + fileName);
+                Files.copy(file.getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            result.setState("uploading");
+
         } else {
             result.setState("not-found");
         }
 
         return result;
     }
-
 
 
 
